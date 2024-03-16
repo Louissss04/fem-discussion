@@ -1,0 +1,43 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.0cm,bottom=2.5cm}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage[longend,ruled,linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{ctex}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+
+\begin{document}
+	
+	\noindent
+	
+	\section{2024.03.13}	
+	
+	
+	考虑两点边值问题
+	\begin{equation}
+		\left\{
+		\begin{array}{l}
+			-u'' + u = (\pi^2 +1) \sin{\pi x}, \\
+			u(0) = u(1) = 0.
+		\end{array}
+		\right.
+	\end{equation}
+	
+	\begin{enumerate}
+		
+		\item 验证变分问题 $$B(u_n, v_n) = (f, v_n),\quad \forall v_n \in V_n$$ 满足Lax-Milgram 定理条件，解$u_n$存在且唯一， 并满足范数估计 $\|u\|_V \leq \frac{1}{\alpha} \|f\|_{V*} $.
+		
+		\item 用 matlab 实现有限元程序计算该一维边值问题.(取N = 4， 8， 16， 32， 用稀疏矩阵存储)
+		
+		
+	\end{enumerate}
+	
+	
+\end{document}
+
