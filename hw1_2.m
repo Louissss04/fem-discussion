@@ -26,6 +26,7 @@ U = K \ F;
 
 x = linspace(0, 1, 101); 
 uh = zeros(1, length(x));
+u = sin(pi * x);
 
 for j = 1: length(x)
     for i = 1 : N-1 
@@ -33,9 +34,11 @@ for j = 1: length(x)
     end
 end
 
+err = abs(u - uh);
+
 plot(x, uh)
 
-function s = phi(x, i, N)
+function s = phi(x, i, N) % 分段插值线性函数
    
     if x >= (i-1)*(1/N) && x <= i*(1/N)
         s = N * (x - (i-1)*(1/N));
