@@ -11,12 +11,12 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{graphicx}
-
+\usepackage{amssymb}
 \begin{document}
 	
 	\noindent
 	
-	\section{2024.03.13}	
+	\section*{2024.03.13}	
 	
 	
 	考虑两点边值问题
@@ -37,6 +37,31 @@
 		
 		
 	\end{enumerate}
+	
+	\section*{2024.03.20}
+	
+	\begin{enumerate}
+		\item 设有椭圆方程混合边值问题
+		$$
+		\begin{cases}-\Delta u+a(\boldsymbol{x}) u(\boldsymbol{x})=f(\boldsymbol{x}), & \boldsymbol{x} \in \Omega \\ \frac{\partial u}{\partial n}+\beta(\boldsymbol{x}) u(\boldsymbol{x})=g(\boldsymbol{x}), & \boldsymbol{x} \in \partial \Omega\end{cases}
+		$$    
+		
+		其中 $\Omega$ 为 $\mathbb{R}^n$ 中具有光滑边界 $\partial \Omega$ 有界单连通区域,$\frac{\partial u}{\partial n}$ 为法向导数, $a(\boldsymbol{x}) \geqslant a_0>0, \beta(\boldsymbol{x}) \geqslant 0$, $f(\boldsymbol{x})$ 均为足够光滑的已知函数.
+		\item[(i)] 试建立该边值问题的 Galerkin 变分问题;
+		\item[(ii)] 讨论 (i) 中变分问题解的适定性.
+		
+		\item 对于椭圆型方程的第一边值问题
+		$$
+		\left\{\begin{array}{l}
+			-\partial_1\left(p(\boldsymbol{x}) \partial_1 u\right)-\partial_2\left(p(\boldsymbol{x}) \partial_2 u\right)+q(\boldsymbol{x}) u(\boldsymbol{x})=f(\boldsymbol{x}), \quad \boldsymbol{x} \in \Omega, \\
+			\left.u(\boldsymbol{x})\right|_{\Gamma}=g(\boldsymbol{x}),
+		\end{array}\right.
+		$$   
+		
+		其中 $\Omega$ 为 $\mathbb{R}^2$ 中具有光滑边界 $\Gamma$ 的有界单连通区域,$p(\boldsymbol{x}) \geqslant p_0>0, q(\boldsymbol{x}) \geqslant 0, f(\boldsymbol{x})$ 足够光滑. 试建立该边值问题的 Galerkin 变分问题, 并研究其适定性.
+		
+	\end{enumerate}
+	
 	
 	
 \end{document}
