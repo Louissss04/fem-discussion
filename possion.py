@@ -79,7 +79,7 @@ pde = MyData()
 domain = np.array([0, 1, 0, 1])
 # 三角网格
 mesh = TriangleMesh.from_box(domain, nx=10, ny=10)
-p = 2 # 空间次数
+p = 5 # 空间次数
 space = LagrangeFESpace(mesh, p=p)
 
 bform = BilinearForm(space)
